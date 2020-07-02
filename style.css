@@ -1,0 +1,452 @@
+/*main style*/
+body{
+    margin: 0px;
+	padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: white;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.html_corrector{
+    display: none;
+}
+
+
+/*List style*/
+ul {
+    list-style: none; 
+  }
+  
+ul li::before {
+content: '\25CF';  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+color: #0063B1;
+display: inline-block;
+width: 1em; 
+margin-left: -1.8em;
+margin-right: 12px;
+font-family: Arial;
+font-weight: 900;
+}
+
+ul.current>li::before {
+    content: '\29BF';
+}
+
+ul.listing>li::before {
+    content: '\25CF';
+    color: black;
+}
+
+
+/*left part (blue)*/
+.profil_picture{
+    border-radius: 50%;
+    width: 200px;
+    border: #00508E 4px solid;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 40px;
+}
+
+.left_bloc{
+    background: #0063B1;
+    font: bold;
+    color: black;  
+    position: relative;
+}
+
+/*left title*/
+.left_title{
+    background: #263238;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 7px;
+    padding-top: 10px;
+    color: #0063B1;
+}
+
+h2{
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+
+/*contact bloc*/
+
+.contact_bloc{
+    margin-top: 80px;
+}
+
+.contact_content li{
+    list-style: none;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+.contact_content{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*list-style contact bloc*/
+.left_bloc a{
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.left_bloc a:hover{
+    color: #262626;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*a propos de moi bloc*/
+.a_propos_content{
+    margin-top: -60px;
+}
+
+.a_propos_content, .loisirs_content{
+    padding: 50px;
+}
+
+.a_propos_content li{
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+
+/*loisirs bloc*/
+.loisirs_bloc{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.loisirs_content{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: -15px;
+}
+
+.loisirs_content i{
+    color: #263238;
+    font-size: 2em;
+    border: #263238 2px solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.loisirs-title{
+    margin-bottom: 0px;
+}
+
+/*projet bloc*/
+.projet_bloc{
+    margin-top: -40px;
+}
+
+.projet{
+    width: 95%;
+}
+
+.projet li{
+    margin-bottom: 20px;
+}
+
+.projet i{
+    color: #263238;
+}
+
+
+
+
+/*right part (white)*/
+.right_bloc{
+    padding: 40px;
+    background: #E4E4E4;   
+}
+
+.marging{
+    margin: 0px 5px 0px 10px;
+}
+
+/*right title*/
+.right_title{
+    
+    border-bottom: #0063B1 solid 3px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+/*en-tete*/
+.profil_picture_2{
+    border-radius: 50%;
+    width: 200px;
+    border: #0063B1 4px solid;
+    margin: -30px 20px 0px 15px;
+    position: relative;
+    float: right;
+}
+
+.name_bloc{
+    vertical-align: middle;
+}
+
+.name{
+    font-size: 2.5em;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#maxime{
+    color: #0063B1;
+    font-weight: 600;
+}
+
+.job_title{
+    color: #262626;
+    font: bold;
+    font-size: 1.5em;
+    margin-bottom: 100px;
+}
+
+.title_underline{
+    border-bottom: #0063B1 solid 2px;
+    padding-bottom: 5px;
+}
+
+
+/*formation*/
+/*experience PRO*/
+/*Recommandations*/
+
+/*date and places right section*/
+.left_side{
+    display: block;
+    width: 30%;
+}
+
+.left_side li{
+    margin-left: -20px;
+    margin-bottom: -13px;
+    width: 100%;
+}
+
+.left_side 
+
+/*formations places*/
+.place{
+    margin-left: 20px;
+    font-style: italic;
+}
+
+/*right text in right section*/
+.right_side{
+    display: block;
+    width: 70%;
+    margin-right: 0px;
+}
+
+.right_text{
+    display: flex;
+    margin-left: 8px;
+}
+
+.right_bloc i{
+    margin-right: 25px;
+    color: #0063B1;
+    width: 25px;
+}
+
+h4{
+    margin-top: 17px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+h5{
+    font-weight: 500;
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*recommandations bloc*/
+
+
+
+/*Responsive design*/
+
+/*left bloc responsive*/
+
+.left_bloc{
+    max-width: 350px;
+    min-width: 310px;
+}
+
+
+/*right bloc responsive*/
+
+.right_bloc{
+    max-width: 650px;
+    min-width: 382px;
+}
+
+
+/*Media queries*/ 
+
+/*conditions smartphone display*/
+@media screen and (max-width: 789px){
+
+    /*main page*/
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profil_picture{
+        display: none;
+    }
+
+    /*right bloc*/
+    
+    .right_bloc{
+        max-width: 789px;
+    }
+
+    /*left bloc*/
+    .left_bloc{
+        max-width: 789px;
+    }
+
+    .contact_bloc{
+        margin-top: -40px;
+    }
+
+    .a_propos_bloc{
+        margin-bottom: 200px;
+    }
+
+    /*Right content*/
+    .right_text{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .right_side{
+        width: 100%;
+    }
+
+    
+   
+}
+
+/*conditions small smartphone display*/
+@media screen and (max-width: 550px){
+
+    .profil_picture_2{
+        border-radius: 50%;
+        width: 180px;
+        border: #0063B1 4px solid;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: -20px;
+        position: relative;
+    }
+
+    .name_bloc{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: -50px;
+    }
+
+    /*right bloc*/
+    .right_bloc{
+        min-width: 0px;
+    }
+
+    .right_bloc{
+        padding: 20px;   
+    }
+
+    /*left bloc*/
+    .left_bloc{
+        min-width: 0px;
+    }
+
+    .a_propos_content, .loisirs_content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact_content{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+/*conditions PC display*/
+@media screen and (min-width:790px){
+
+    .profil_picture_2{
+        display: none;
+        
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+
+}
+
+/*conditions for recommandations, place and date content*/
+@media screen and (max-width: 960px){
+
+    .recommandations_content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .recommandation_bloc_1, .recommandation_bloc_2{
+        text-align: center;
+        margin-bottom: 20px;
+        padding-right: 0px;
+    }
+
+    .right_text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .right_side{
+        width: 95%;
+    }
+
+    .left_side{
+        display: block;
+        width: 100%;
+    }
+}
